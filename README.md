@@ -19,3 +19,20 @@ Dibangun menggunakan **Laravel 11**, **Tailwind CSS**, dan database **MySQL**.
 ## 📦 Instalasi
 
 ### 1. Clone repository
+https://github.com/wishaputra/laravel-produk-crud.git
+### 2. Install dependencies
+composer install
+### 3. Konfigurasi `.env`
+cp .env.example .env
+php artisan key:generate
+
+Isi database:
+DB_DATABASE=laravel_produk_crud
+DB_USERNAME=root
+DB_PASSWORD=
+
+
+### 4. Migrasi & Seeder
+php artisan migrate --seed
+### 5. Jalankan server
+php artisan serve
